@@ -13,7 +13,7 @@ public class TestStringArray {
 
 	public static void addString() {
 		String[] myStringArray = {"111","222","333"};
-		myStringArray = Arrays.copyOf(myStringArray, 4);
+		myStringArray = (String[]) Arrays.copyOf(myStringArray, 4);
 		myStringArray[3] = "444";
 		
 		for(int i = 0;i<myStringArray.length;i++) {
@@ -24,7 +24,7 @@ public class TestStringArray {
 	public static void deleteString() {
 		String[] myStringArray = {"111","222","333"};
 		
-		myStringArray = Arrays.copyOf(myStringArray, 2);
+		myStringArray = (String[]) Arrays.copyOf(myStringArray, 2);
 		
 		for(int i = 0;i<myStringArray.length;i++) {
 			System.out.println("deleteString : "+myStringArray[i]);
